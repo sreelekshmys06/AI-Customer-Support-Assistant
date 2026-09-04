@@ -1,6 +1,6 @@
 # 🤖 AI Customer Support Assistant
 
-A real-time, AI-powered customer support agent dashboard built with Python, Streamlit, Google Gemini AI (`gemini-3.6-flash`), and Hugging Face Transformers (`bart-large-mnli` and `distilbert`).
+A real-time, AI-powered customer support agent dashboard built with Python, Streamlit, Google Gemini AI, and Hugging Face Transformers.
 
 ---
 
