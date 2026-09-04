@@ -40,26 +40,6 @@ AI-Customer-Support-Assistant/
 ```
 
 ---
-
-## 🚀 Quick Start Guide
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/YOUR_USERNAME/AI-Customer-Support-Assistant.git
-cd AI-Customer-Support-Assistant
-```
-
-### 2. Set Up Environment Variables
-Create a `.env` file in the root directory and add your Gemini API Key:
-```env
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
 ### 4. Run the Streamlit Application
 ```bash
 streamlit run frontend/app.py
