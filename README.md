@@ -38,9 +38,3 @@ AI-Customer-Support-Assistant/
 ├── requirements.txt         # Project dependencies
 └── README.md                # Project documentation
 ```
-### 4. Run the Streamlit Application
-```bash
-streamlit run frontend/app.py
-```
-
-Open your browser at `http://localhost:8501`.
