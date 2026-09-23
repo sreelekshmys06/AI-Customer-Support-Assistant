@@ -4,11 +4,12 @@ import time
 from dataclasses import dataclass
 from typing import List, Optional
 
-from google import genai
+from google.genai import Client
 
 from dotenv import load_dotenv
 
 load_dotenv()
+
 
 @dataclass
 class Message:
@@ -29,7 +30,6 @@ class CoachingFeedback:
 class AICoach:
 
     def __init__(self):
-
         api_key = os.getenv("GEMINI_API_KEY")
 
         if not api_key:
@@ -37,7 +37,7 @@ class AICoach:
                 "GEMINI_API_KEY environment variable is not set."
             )
 
-        self.client = genai.Client(
+        self.client = Client(
             api_key=api_key
         )
 
@@ -106,6 +106,7 @@ class AICoach:
                         )
 
                 else:
+
                     raise e
 
     def analyze_customer_message(
@@ -124,7 +125,6 @@ Customer message:
 Return ONLY valid JSON.
 
 Use exactly this structure:
-
 {{
     "sentiment": "positive|neutral|negative",
     "urgency": "low|medium|high",
@@ -167,7 +167,6 @@ Score the agent from 1 to 10 for:
 Then provide ONE concrete coaching tip.
 
 Return ONLY valid JSON using exactly this structure:
-
 {{
     "tone_score": 1,
     "empathy_score": 1,
